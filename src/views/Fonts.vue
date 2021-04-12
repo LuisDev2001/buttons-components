@@ -1,4 +1,14 @@
-<template> </template>
+<template>
+  <section class="fonts">
+    <h2 class="fonts__title">There are fonts</h2>
+    <h1>Title one</h1>
+    <h2>Title two</h2>
+    <h3>Title three</h3>
+    <h4>Title four</h4>
+    <h5>Title five</h5>
+    <h6>Title six</h6>
+  </section>
+</template>
 
 <script>
 export default {
@@ -6,4 +16,32 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.fonts {
+  padding: 30px 0;
+  .fonts__title {
+    font-size: 62px;
+  }
+  * {
+    margin: 0 0 20px 0;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  h6 {
+    font-size: 25px;
+  }
+}
+</style>

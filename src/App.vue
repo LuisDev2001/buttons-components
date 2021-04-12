@@ -1,5 +1,22 @@
 <template>
+  <PxNavBar />
   <router-view />
 </template>
 
-<style lang="scss"></style>
+<script>
+import PxNavBar from "@/components/PxNavBar";
+export default {
+  components: {
+    PxNavBar,
+  },
+};
+</script>
+
+<style lang="scss">
+@import "./assets/sass/_base.scss";
+#app {
+  display: grid;
+  grid-template-columns: 236px 1fr;
+  height: 100vh;
+}
+</style>
