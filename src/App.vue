@@ -17,6 +17,7 @@ export default {
 #app {
   display: grid;
   grid-template-columns: 236px 1fr;
-  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 </style>

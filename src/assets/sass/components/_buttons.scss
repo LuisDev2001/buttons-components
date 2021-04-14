@@ -1,0 +1,91 @@
+.button {
+  background: #e0e0e0;
+  border: 0;
+  width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.35s ease all;
+  color: var(--color-black-two);
+  &.hover {
+    background: #aeaeae;
+  }
+  &.button-outline {
+    border: 1px solid #3d5afe;
+    background: #ffffff;
+    color: #3d5afe;
+    &.hover {
+      background: rgba(41, 98, 255, 0.1);
+    }
+  }
+  &.button-text {
+    border: 0;
+    background: none;
+    color: #3d5afe;
+    &.hover {
+      background: rgba(41, 98, 255, 0.1);
+    }
+  }
+  &.button-disableShadow {
+    background: #3d5afe;
+    color: #ffffff;
+  }
+  &.button-disabled,
+  &.button-disabled-text {
+    color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  &.button-disabled-text {
+    background: none;
+  }
+  &.button-cart-start,
+  &.button-cart-end {
+    width: 105px;
+    background: #2962ff;
+    color: #ffffff;
+  }
+  &.button-cart-end {
+    flex-direction: row-reverse;
+  }
+  &.button-sm,
+  &.button-md,
+  &.button-lg {
+    background: #2962ff;
+    color: #ffffff;
+  }
+  &.button-sm {
+    width: 73px;
+    height: 32px;
+  }
+  &.button-md {
+    width: 81px;
+    height: 36px;
+  }
+  &.button-lg {
+    width: 93px;
+    height: 42px;
+  }
+  &.button-primary {
+    background: #2962ff;
+    color: #ffffff;
+    &.hover {
+      background: #0039cb;
+    }
+  }
+  &.button-secondary {
+    background: #455a64;
+    color: #ffffff;
+    width: 104px;
+    &.hover {
+      background: #1c313a;
+    }
+  }
+  &.button-danger {
+    background: #d32f2f;
+    color: #ffffff;
+    &.hover {
+      background: #9a0007;
+    }
+  }
+}
