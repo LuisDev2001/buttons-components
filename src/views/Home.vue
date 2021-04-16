@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home wrapper">
     <h1>This is a DevChallenge #1</h1>
     <div>
       <a href="" target="_blank">Go to repository</a>
@@ -23,7 +23,6 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  padding: 30px 0;
   div {
     margin: 20px 0;
     a {

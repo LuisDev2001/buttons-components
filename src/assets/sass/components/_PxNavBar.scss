@@ -38,13 +38,42 @@
   }
   &__item {
     display: block;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     a {
       display: block;
       text-decoration: none;
       font-size: 14px;
       color: var(--color-black);
       outline: none;
+      padding: 10px;
+      transition: 0.3s ease all;
+      &:hover {
+        background: #cccccc;
+      }
+      &.i-home,
+      &.i-font,
+      &.i-button {
+        &::before {
+          font-family: FontAwesome;
+          font-size: 17px;
+          margin: 0 8px 0 0;
+        }
+      }
+      &.i-home {
+        &::before {
+          content: "\f015";
+        }
+      }
+      &.i-font {
+        &::before {
+          content: "\f031";
+        }
+      }
+      &.i-button {
+        &::before {
+          content: "\f121";
+        }
+      }
     }
   }
 }

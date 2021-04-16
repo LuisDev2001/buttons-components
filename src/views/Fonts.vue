@@ -1,5 +1,5 @@
 <template>
-  <section class="fonts">
+  <section class="fonts wrapper">
     <h2 class="fonts__title">Noto Sans JP</h2>
     <h1>Title one</h1>
     <h2>Title two</h2>
@@ -18,7 +18,6 @@ export default {
 
 <style lang="scss" scoped>
 .fonts {
-  padding: 30px 0;
   .fonts__title {
     font-size: 62px;
   }

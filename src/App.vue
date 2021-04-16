@@ -24,7 +24,6 @@ export default {
 @media screen and(max-width: 768px) {
   #app {
     grid-template-columns: 1fr;
-    padding: 0 15px;
   }
 }
 </style>

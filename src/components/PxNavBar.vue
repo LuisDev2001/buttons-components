@@ -20,6 +20,7 @@
         <router-link
           :to="itemMenu.path"
           v-text="itemMenu.name"
+          :class="itemMenu.class"
           @click="closeMenu($event)"
         ></router-link>
       </li>
@@ -40,14 +41,17 @@ export default {
         {
           path: "/",
           name: "Home",
+          class: "i-home",
         },
         {
           path: "/fonts",
           name: "Fonts",
+          class: "i-font",
         },
         {
           path: "/buttons",
           name: "Buttons",
+          class: "i-button",
         },
       ];
       listLinksMenu.value = objLinks;

@@ -1,5 +1,5 @@
 <template>
-  <section class="buttons">
+  <section class="buttons wrapper">
     <h2 class="buttons__title">Buttons</h2>
     <section class="default">
       <PxButton
@@ -154,7 +154,6 @@ export default {
 
 <style lang="scss" scoped>
 .buttons {
-  padding: 30px 15px;
   &__title {
     font-weight: 500;
     font-size: 24px;
