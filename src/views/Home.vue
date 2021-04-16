@@ -2,7 +2,11 @@
   <div class="home wrapper">
     <h1>This is a DevChallenge #1</h1>
     <div>
-      <a href="" target="_blank">Go to repository</a>
+      <a
+        href="https://github.com/LuisDev2001/buttons-components"
+        target="_blank"
+        >Go to repository</a
+      >
     </div>
     <div>
       <a href="https://luisdev2001.github.io/MyPortfolio/dist/" target="_blank">
