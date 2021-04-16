@@ -154,7 +154,7 @@ export default {
 
 <style lang="scss" scoped>
 .buttons {
-  padding: 30px 0;
+  padding: 30px 15px;
   &__title {
     font-weight: 500;
     font-size: 24px;
@@ -164,6 +164,7 @@ export default {
     margin: 0 0 45px 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     div:first-child {
       width: 300px;
     }
@@ -173,6 +174,17 @@ export default {
   .actions-hover {
     .button-wrapper {
       width: 25%;
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  .buttons {
+    .sizes,
+    .actions,
+    .actions-hover {
+      .button-wrapper {
+        width: 50%;
+      }
     }
   }
 }

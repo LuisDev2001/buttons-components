@@ -1,5 +1,37 @@
 .navbar {
   padding: 120px 0 60px;
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    &::before {
+      content: "\f057";
+      font-family: FontAwesome;
+      font-size: 42px;
+    }
+  }
+  &__menu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    background: #333333;
+    padding: 10px;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    &::before {
+      content: "\f0c9";
+      font-family: FontAwesome;
+      font-size: 25px;
+      color: #ffffff;
+    }
+  }
   &__list {
     height: 100%;
     padding: 0 15px 50px 15px;
@@ -13,6 +45,35 @@
       font-size: 14px;
       color: var(--color-black);
       outline: none;
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  .navbar {
+    position: fixed;
+    left: -75%;
+    top: 0;
+    width: 75%;
+    background: #ffffff;
+    height: 100vh;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    transition: 0.7s ease-in-out all;
+    &.show {
+      left: 0;
+    }
+    &__close {
+      display: block;
+    }
+    &__menu {
+      opacity: 1;
+      pointer-events: initial;
+      cursor: pointer;
+    }
+    &__item {
+      a {
+        font-size: 24px;
+      }
     }
   }
 }

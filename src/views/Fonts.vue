@@ -1,6 +1,6 @@
 <template>
   <section class="fonts">
-    <h2 class="fonts__title">There are fonts</h2>
+    <h2 class="fonts__title">Noto Sans JP</h2>
     <h1>Title one</h1>
     <h2>Title two</h2>
     <h3>Title three</h3>
