@@ -187,4 +187,14 @@ export default {
     }
   }
 }
+
+@media screen and(max-width: 420px) {
+  .buttons {
+    section {
+      div {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}
 </style>
