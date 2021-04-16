@@ -33,6 +33,8 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [Vue.js](https://v3.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [SASS](https://sass-lang.com/)
 
 ## Features
 
