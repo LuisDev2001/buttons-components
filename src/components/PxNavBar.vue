@@ -53,6 +53,11 @@ export default {
           name: "Buttons",
           class: "i-button",
         },
+        {
+          path: "/inputs",
+          name: "Inputs",
+          class: "i-input",
+        },
       ];
       listLinksMenu.value = objLinks;
     });

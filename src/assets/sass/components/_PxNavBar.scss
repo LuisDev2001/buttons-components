@@ -52,7 +52,8 @@
       }
       &.i-home,
       &.i-font,
-      &.i-button {
+      &.i-button,
+      &.i-input {
         &::before {
           font-family: FontAwesome;
           font-size: 17px;
@@ -72,6 +73,11 @@
       &.i-button {
         &::before {
           content: "\f121";
+        }
+      }
+      &.i-input {
+        &::before {
+          content: "\f11c";
         }
       }
     }
