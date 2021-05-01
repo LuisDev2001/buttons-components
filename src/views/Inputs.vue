@@ -1,7 +1,7 @@
 <template>
   <section class="inputs wrapper">
     <h2 class="inputs__title">Inputs</h2>
-    <section class="default">
+    <section class="container-flex">
       <PxInput titleInput="<Input />" classNameInput="input input-default" />
 
       <PxInput
@@ -18,7 +18,7 @@
       />
     </section>
 
-    <section class="error">
+    <section class="container-flex">
       <PxInput
         titleInput="<Input error />"
         typeLabel="error"
@@ -37,14 +37,14 @@
       />
     </section>
 
-    <section class="disabled">
+    <section class="container-flex">
       <PxInput
         titleInput="<Input disabled />"
         classNameInput="input input-disabled"
       />
     </section>
 
-    <section class="some-text-input">
+    <section class="container-flex">
       <PxInput
         titleInput="<Input helperText=”Some interesting text” />"
         classNameInput="input input-show-text"
@@ -61,16 +61,67 @@
       />
     </section>
 
-    <section class="icon"></section>
+    <section class="container-flex">
+      <PxInput
+        titleInput="<Input startIcon />"
+        classNameInput="input input-startIcon"
+        iconContent="content-icon"
+        :showIcon="true"
+        icon="i-phone"
+      />
+
+      <PxInput
+        titleInput="<Input endIcon />"
+        classNameInput="input input-endIcon"
+        iconContent="content-icon-lock"
+        :showIcon="true"
+        icon="i-lock"
+      />
+    </section>
+
+    <section class="container-flex">
+      <PxInput
+        titleInput="<Input value=”text” />"
+        classNameInput="input input-value"
+        valueInput="Text"
+      />
+    </section>
+
+    <section class="container-flex">
+      <PxInput
+        titleInput="<Input size=”sm” />"
+        classNameInput="input input-sm"
+      />
+      <PxInput
+        titleInput="<Input size=”md” />"
+        classNameInput="input input-md"
+      />
+    </section>
+    <section class="container-flex fullw">
+      <PxInput
+        titleInput="<Input size=”md” />"
+        classNameInput="input input-full-width"
+        valueInput="Text"
+      />
+    </section>
+    <section class="container-flex">
+      <PxInput
+        titleInput="<Input multiline row=”4” />"
+        classNameInput="input input-multiline"
+      />
+    </section>
+    <PxCreate />
   </section>
 </template>
 
 <script>
-import PxInput from "@/components/PxInput.vue";
+import PxInput from "@/components/PxInput";
+import PxCreate from "@/components/PxCreate";
 export default {
   name: "Inputs",
   components: {
     PxInput,
+    PxCreate,
   },
 };
 </script>
@@ -82,13 +133,13 @@ export default {
     font-size: 24px;
     margin: 0 0 28px 0;
   }
-  .default,
-  .error,
-  .disabled,
-  .some-text-input {
+  .container-flex {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 42px 0;
+    &.fullw {
+      display: block;
+    }
   }
 }
 </style>

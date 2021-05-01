@@ -3,7 +3,15 @@
     <span :class="disabledText">{{ titleInput }}</span>
     <label :class="typeLabel">
       Label
-      <input type="text" :class="classNameInput" placeholder="Placeholder" />
+      <span v-if="showIcon" :class="iconContent">
+        <i :class="icon"></i>
+      </span>
+      <input
+        type="text"
+        :class="classNameInput"
+        :value="valueInput"
+        placeholder="Placeholder"
+      />
       <span :class="typeText" v-if="showText">
         Some interesting text
       </span>
@@ -21,6 +29,11 @@ export default {
     typeLabel: String,
     showText: false,
     typeText: String,
+    showIcon: false,
+    icon: String,
+    iconContent: String,
+    valueInput: String,
+    classWrapper: String,
   },
 };
 </script>

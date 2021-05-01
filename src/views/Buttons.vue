@@ -135,19 +135,19 @@
       />
       <PxButton className="button button-danger hover" textButton="Danger" />
     </section>
+    <PxCreate />
   </section>
 </template>
 
 <script>
 import PxButton from "@/components/PxButton";
-import { ref } from "vue";
+import PxCreate from "@/components/PxCreate";
+
 export default {
   name: "Buttons",
   components: {
     PxButton,
-  },
-  setup() {
-    return {};
+    PxCreate,
   },
 };
 </script>
@@ -166,6 +166,9 @@ export default {
     flex-wrap: wrap;
     div:first-child {
       width: 300px;
+    }
+    &:last-child {
+      margin: 0;
     }
   }
   .sizes,
@@ -192,7 +195,7 @@ export default {
   .buttons {
     section {
       div {
-        margin: 0 0 10px 0;
+        margin: 0 0 15px 0;
       }
     }
   }

@@ -30,6 +30,8 @@
     font-family: var(--font-noto);
     font-weight: 400;
     font-size: 12px;
+    position: relative;
+    display: block;
     &.focus {
       color: #2962ff;
     }
@@ -39,6 +41,37 @@
   }
   &:last-child {
     margin: 0;
+  }
+  // Icons
+  .i-lock {
+    font-style: unset;
+  }
+  .i-phone::before,
+  .i-lock::before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #828282;
+  }
+  .i-phone::before {
+    content: "\f879";
+  }
+  .i-lock::before {
+    content: "\f13e";
+  }
+  .content-icon,
+  .content-icon-lock {
+    position: absolute;
+    margin: 0;
+    bottom: 17px;
+  }
+  .content-icon {
+    left: 8px;
+  }
+  .content-icon-lock {
+    right: 8px;
+  }
+  @media screen and (max-width: 992px) {
+    margin: 0 70px 15px 0;
   }
 }
 .input {
@@ -79,5 +112,23 @@
   }
   &-show-text-error {
     border: 1px solid #d32f2f;
+  }
+  &-startIcon {
+    padding: 12px 18px 12px 40px;
+  }
+  &-endIcon {
+    padding: 12px 40px 12px 18px;
+  }
+  &-value {
+    font-weight: bold;
+  }
+  &-sm {
+    height: 40px;
+  }
+  &-full-width {
+    width: 100%;
+  }
+  &-multiline {
+    padding: 20px 12px 115px;
   }
 }
