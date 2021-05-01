@@ -99,7 +99,7 @@
     </section>
     <section class="container-flex fullw">
       <PxInput
-        titleInput="<Input size=”md” />"
+        titleInput="<Input fullWidth />"
         classNameInput="input input-full-width"
         valueInput="Text"
       />
